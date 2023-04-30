@@ -1,0 +1,55 @@
+imagenes:
+
+icono op1 "depositphotos_165283054-stock-illustration-car-parts-store":
+
+https://st3.depositphotos.com/1124381/16528/v/600/depositphotos_165283054-stock-illustration-car-parts-store.jpg
+
+icono op2 "gratis-png-iconos-de-la-computadora-del-automovil-servicio-de-vehiculos-de-motor-autopartes":
+
+https://c0.klipartz.com/pngpicture/678/580/gratis-png-iconos-de-la-computadora-del-automovil-servicio-de-vehiculos-de-motor-autopartes.png
+
+Sobre Nosotros op1 "460a8e4561654aae229c26ec51804c47":
+
+https://i.pinimg.com/originals/46/0a/8e/460a8e4561654aae229c26ec51804c47.jpg
+
+Sobre Nosotros op2 "784836-gallery1034":
+
+https://cs2.gtaall.net/screenshots/d9802/2020-03/original/54f1358e7d22278dfe093722acbcb23ba523709d/784836-gallery1034.jpg
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Letras:
+
+dancing script : https://fonts.google.com/specimen/Dancing+Script
+css:	font-family: 'Roboto', sans-serif;
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+iconos footer:
+
+email:
+
+https://icons.getbootstrap.com/icons/envelope-at/
+
+telefono:
+
+https://icons.getbootstrap.com/icons/phone/
+
+celular:
+
+https://icons.getbootstrap.com/icons/whatsapp/
+
+red social:
+
+https://icons.getbootstrap.com/icons/facebook/
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+página de corrección ortográfica:
+
+https://www.corrector.co/es/
+
