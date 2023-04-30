@@ -1,0 +1,41 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+div {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.QuiSom {
+    text-decoration: underline;
+    text-align: center;
+    margin: 15px;
+    padding: 10px;
+}
+
+mark {
+    background-color: aqua;
+}
+
+img { /* solo usar con imagen "784836-gallery1034" */
+    max-width: 25vw;
+    height: auto;
+    width: auto;
+}
+
+/* dispositivos chicos */
+@media (max-width: 600px) {
+    body {
+        background-color: rgb(152, 128, 240);
+    }
+}
+
+/* dispositivos grandes */
+@media (min-width: 1000px) {
+    body {
+        background-color: rgb(196, 230, 173);
+    }
+}
