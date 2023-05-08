@@ -39,3 +39,13 @@ img { /* solo usar con imagen "784836-gallery1034" */
         background-color: rgb(196, 230, 173);
     }
 }
+
+.footer {
+    width: 100% !important;
+    height: 420px !important;
+}
+
+.header{
+    width: 100% !important;
+    height: 150px !important;
+}

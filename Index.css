@@ -1,0 +1,14 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.footer {
+    width: 100% !important;
+    height: 420px !important;
+}
+
+.header{
+    width: 100% !important;
+    height: 150px !important;
+}
