@@ -17,7 +17,7 @@ div {
 }
 
 mark {
-    background-color: aqua;
+    background-color: rgba(122, 150, 0, 0.2);
 }
 
 img { /* solo usar con imagen "784836-gallery1034" */
@@ -27,18 +27,18 @@ img { /* solo usar con imagen "784836-gallery1034" */
 }
 
 /* dispositivos chicos */
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     body {
         background-color: rgb(152, 128, 240);
     }
-}
+} */
 
 /* dispositivos grandes */
-@media (min-width: 1000px) {
+/* @media (min-width: 1000px) {
     body {
         background-color: rgb(196, 230, 173);
     }
-}
+} */
 
 .footer {
     width: 100% !important;
@@ -47,5 +47,5 @@ img { /* solo usar con imagen "784836-gallery1034" */
 
 .header{
     width: 100% !important;
-    height: 150px !important;
+    height: 80px !important;
 }
