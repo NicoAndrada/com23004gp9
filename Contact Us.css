@@ -3,12 +3,17 @@
     text-align: center;
 }
 
+.header{
+    width: 100% !important;
+    height: 80px !important;
+}
+
 .footer {
     width: 100% !important;
     height: 420px !important;
 }
 
-.header{
-    width: 100% !important;
-    height: 80px !important;
+.box{
+    height: 100px !important;
+    width: 300px !important;
 }

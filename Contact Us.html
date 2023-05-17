@@ -16,10 +16,68 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam commodi fugiat laudantium dignissimos aspernatur
         ullam necessitatibus repudiandae consequatur consectetur minus quam repellendus excepturi, iusto blanditiis ea
         accusamus quas eveniet aut!</p>
+
+    <h3>Formas de contacto</h3>
+        <div>
+            <p>Telefono: <a href="#">+54 9 1111111111</a></p>
+            <p>Email:  <a href="#">gd6f54gsdf86@Derepuesto.com</a> </p>
+
+        </div>
+    <h3>donde estamos</h3>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35638.685432048056!2d-59.814327288817495!3d-35.64380062064924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bde1b9ad8f94cd%3A0x96a954c0336099ac!2sEl%20Cristo!5e0!3m2!1ses-419!2sar!4v1684358571774!5m2!1ses-419!2sar"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <h3>Formulario</h3>
+    <div>
+        <form action="show_data.html" target="_blank" method="get">
+
+            <div>
+                <label for="F-Name">Nombre:</label>
+                <input id="F-Name" type="text" name="Nombre">
+                <label for="F-Apellido">Apellido:</label>
+                <input id="F-Apellido" type="text" name="Apellido">
+            </div>
+
+            <div>
+                <label for="F-Phone">Telefono:</label>
+                <input id="F-Phone" type="text" name="Telefono">
+                <label for="F-Email">Email:</label>
+                <input type="email" name="Email" id="F-Email">
+            </div>
+
+            <!-- caja de seleccion -->
+            <label for="Opt_Options">Opciones:</label>
+            <select name="Opciones" id="Opt_Options"> <!-- modificar aca-->
+                <option value="-">-</option>
+                <option value="Presupeusto">Presupeusto</option>
+                <option value="Reclamos">Reclamos</option>
+                <option value="Sugerencias">Sugerencias</option>
+                <option value="Otros">Otros</option>
+            </select>
+
+            <!--caja de comentarios  -->
+            <div>
+                <label for="comentarios">comentarios:</label> <!-- ver si se puede situar mejor-->
+                <input type="text" class="box">
+            </div>
+
+            <!-- botones -->
+            <div>
+                <input type="submit" value="enviar">
+                <input type="reset" value="borrar">
+            </div>
+
+            <p> si usted hace click en el boton "enviar", la informacion sera enviada a la pagina "show_data.html</p>
+        </form>
+    </div>
+</body>
 </body>
 
 <footer>
-    <iframe class="footer" src="footer.html" frameborder="0"></iframe>
+    <iframe class="footer" src="footer.html" ></iframe> 
+    <!-- no funciona en esta pagina -->
 </footer>
 
 </html>
