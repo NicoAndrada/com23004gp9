@@ -12,3 +12,26 @@
     width: 100% !important;
     height: 80px !important;
 }
+
+.gallery1{
+    display: flex;
+}
+
+.gallery1 img{
+    width: 350px;
+    height: 350px;
+    border: 3px solid;
+    margin: 120px 10px 20px 0;
+}
+
+.gallery2{
+    display: flex;
+}
+
+.gallery2 img{
+    width: 350px;
+    height: 350px;
+    border: 3px solid;
+    margin: 120px 10px 20px 0;
+}
+
