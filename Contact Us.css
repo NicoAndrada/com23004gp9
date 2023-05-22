@@ -17,3 +17,12 @@
     height: 100px !important;
     width: 300px !important;
 }
+
+.warnings {
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: blue;
+    padding-top: 20px;
+    
+}
