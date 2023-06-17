@@ -29,21 +29,21 @@
 
     <h3>Formulario</h3>
     <div>
-        <form action="" method="post" id="form">
+        <form  id="form" class="form" action="https://formspree.io/f/mdovqleo" method="POST">
 
 
             <div>
                 <label for="Name">Nombre:</label>
-                <input id="Name" type="text" name="Nombre">
+                <input id="Name" required type="text" name="Nombre">
                 <label for="Apellido">Apellido:</label>
-                <input id="Apellido" type="text" name="Apellido">
+                <input id="Apellido" required type="text" name="Apellido">
             </div>
 
             <div>
                 <label for="Tel">Telefono:</label>
                 <input id="Tel" type="text" name="Telefono">
                 <label for="Email">Email:</label>
-                <input type="Email" name="Email" id="Email">
+                <input type="Email" required name="Email" id="Email">
             </div>
 
             <!-- caja de seleccion -->
@@ -70,9 +70,8 @@
 
 
             </div>
-            <p> si usted hace click en el boton "enviar", la informacion sera enviada a nuestra base de datos</p>
         </form>
-        <script src="validar.js"></script>
+         <script src="validar.js"></script>
 
     </div>
 </body>
@@ -80,5 +79,29 @@
 <footer>
     <iframe class="footer" src="footer.html"></iframe>
 </footer>
+
+<script>
+    const $form = document.querySelector('#form')
+
+    $form.addEventListener('submit', handlesubmit)
+
+    async function handlesubmit(event) {
+        event.preventDefault()
+        const form = new FormData(this)
+        const response = await fetch(this.action, {
+            method: this.method,
+            body: form,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        if (response.ok) {
+            this.reset()
+            alert('Gracias por contactarnos, te responderemos a la brevedad')
+        }
+    }
+
+</script>
+
 
 </html>
