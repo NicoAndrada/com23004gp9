@@ -1,81 +1,101 @@
 * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    text-align: center;
+}
+
+.Padre {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.header {
+    height: 80px;
 }
 
 .footer {
-    width: 100% !important;
+    width: 100%;
     bottom: 0;
-}
-
-.header{
-    width: 100% !important;
-    height: 80px !important;
-}
-
-.gallery1{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-flow: column;
+} 
+
+.Section {
+    /* background-color: #000; */
+    display: flex;
 }
 
-.gallery1 img{
-    width: 300px;
-    height: 300px;
-    border: 3px solid;
-    margin: 120px 10px 20px 0;
+.Articulos {
+    /* background-color: #154; */
+    flex: 2 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.Article {
+    /* background-color: rgb(238, 59, 14); */
+    flex: 1 1 40%;
+    border: 1px solid black;
+}
+
+.Article h4{
+    text-align: center;
+    font-size: 25px;
+    padding-top: 15px;
+}
+
+.Article img{
+    padding: 45px;
+    width: 100%;
+    height: 500px;
     cursor: pointer;
 }
 
-.gallery1 img:hover{
-    transform: scale(1.2);
+.Article img:hover{
+    transform: scale(1.1);
 }
 
-/* .gallery1 h4{
- 
-} */
-
-.gallery2{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.gallery2 img{
-    width: 280px;
-    height: 300px;
-    border: 3px solid;
-    margin: 120px 10px 20px 0;
-    cursor: pointer;
-}
-
-.gallery2 img:hover{
-    transform: scale(1.2);
-}
-
-/* .gallery2 h4{
-
-} */
-
-/* dispositivos chicos */
-@media (max-width: 799px) {
-    body{
-        background-color: lightcoral;
+@media all and (max-width: 920px){
+    .Section{
+        flex-direction: column;
     }
-    h4 {
+    .Article img{
+        width: 100%;
+        height: 400px;
+    }
+    .Article h4{
+        text-align: center;
         font-size: 20px;
+    }
+    .Article img:hover{
+        transform: scale(1.1);
+    }
+    .header {
+        height: auto;
         display: flex;
-        word-wrap: break-word;
+        flex-flow: column;
     }
 }
 
-/*dispositivos grandes */
-@media (min-width: 800px) { 
-    body{
-        background-color: lightblue;
+@media all and (max-width: 420px){
+    .Articulos{
+        flex-direction: column;
     }
-    h4 {
+    .Article img{
+        width: 100%;
+        height: 250px;
+    }
+    .Article h4{
+        text-align: center;
+        font-size: 15px;
+    }
+    .Article img:hover{
+        transform: scale(1.1);
+    }
+    .header {
+        height: auto;
         display: flex;
-        word-wrap: break-word;
+        flex-flow: column;
     }
 }
