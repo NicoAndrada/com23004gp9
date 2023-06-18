@@ -1,4 +1,6 @@
 * {
+    margin: 0px;
+    padding: 0px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
@@ -33,5 +35,5 @@ img { /* solo usar con imagen "784836-gallery1034" */
 
 .header{
     width: 100% !important;
-    height: 80px !important;
+    height: 80px ;
 }
