@@ -10,7 +10,7 @@
 
 .footer {
     width: 100% !important;
-    height: 420px !important;
+    bottom: 0;
 }
 
 .box{
@@ -23,6 +23,5 @@
     text-align: center;
     margin: auto;
     color: blue;
-    padding-top: 20px;
-    
+    padding-top: 20px; 
 }

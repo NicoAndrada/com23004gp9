@@ -43,10 +43,6 @@ body {
     padding: 0 15px;
 }
 
-.header .links li:hover {
-    transform: scale(1.2);
-}
-
 .header .links a {
     font-size: 700;
     color: #DFF8FF;

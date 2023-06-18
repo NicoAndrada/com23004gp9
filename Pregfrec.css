@@ -27,23 +27,9 @@ img { /* solo usar con imagen "784836-gallery1034" */
     width: auto;
 }
 
-/* dispositivos chicos */
-/* @media (max-width: 600px) {
-    body {
-        background-color: rgb(152, 128, 240);
-    }
-} */
-
-/* dispositivos grandes */
-/* @media (min-width: 1000px) {
-    body {
-        background-color: rgb(196, 230, 173);
-    }
-} */
-
 .footer {
     width: 100% !important;
-    height: 420px !important;
+    bottom: 0 !important;
 }
 
 .header{
