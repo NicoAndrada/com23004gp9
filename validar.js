@@ -5,7 +5,10 @@ const email = document.getElementById("Email")
 const form = document.getElementById("form")
 const parrafo = document.getElementById("Warnings")
 
-
+//si se completa mal el formulario la validacion funciona bien. 
+//si corrijo el dato en el formulario y aprieto enviar no hace nada.... 
+//hay que hacer dos veces click
+//en el boton enviar para que la info se mande
 
 
 
