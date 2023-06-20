@@ -14,6 +14,7 @@ body {
 .header {
     background-color: #F8981C;
     display: flex;
+    height:auto;
     justify-content: space-between;
     align-items: center;
     padding: 0px 10px;
@@ -21,9 +22,11 @@ body {
 
 .header .logo {
     cursor: pointer;
+    
 }
 
 .header .logo img {
+   
     height: 70px;
     width: auto;
     transition: all 0.3s;
@@ -47,6 +50,7 @@ body {
     font-size: 700;
     color: #DFF8FF;
     text-decoration: none;
+    flex-wrap: wrap;
 }
 
 .header .links li a:hover {

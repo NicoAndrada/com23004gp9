@@ -28,14 +28,14 @@
     </div>
     <div style="padding-bottom: 15px;">
         <h3>Formulario</h3>
-        <form action="" method="post" id="form">
+        <!--<form action="" method="post" id="form"> esto hacia que no funcione la api ojo...-->
     <div>
-        
+        <!--integracion de api Formspree-->
         <form id="form" class="form" action="https://formspree.io/f/mdovqleo" method="POST">
 
             <div style="margin: 10px;">
                 <label for="Name">Nombre:</label>
-                <input id="Name" type="text" name="Nombre" style="margin-right: 10px;">
+               <!-- <input id="Name" type="text" name="Nombre" style="margin-right: 10px;">-->
                 <input id="Name" required type="text" name="Nombre">
                 <label for="Apellido">Apellido:</label>
                 <input id="Apellido" required type="text" name="Apellido">
@@ -81,28 +81,7 @@
     <iframe class="footer" src="footer.html"></iframe>
 </footer>
 
-<script>
-    const $form = document.querySelector('#form')
 
-    $form.addEventListener('submit', handlesubmit)
-
-    async function handlesubmit(event) {
-        event.preventDefault()
-        const form = new FormData(this)
-        const response = await fetch(this.action, {
-            method: this.method,
-            body: form,
-            headers: {
-                'Accept': 'application/json'
-            }
-        })
-        if (response.ok) {
-            this.reset()
-            alert('Gracias por contactarnos, te responderemos a la brevedad')
-        }
-    }
-
-</script>
 
 
 </html>
