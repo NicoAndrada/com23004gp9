@@ -11,50 +11,44 @@ const parrafo = document.getElementById("Warnings")
 //en el boton enviar para que la info se mande
 
 
-
-
 form.addEventListener("submit", e => {
   e.preventDefault()
-  //let warnings = ""
   let entrar = false
-  let ValidaEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
-  //parrafo.innerHTML = ""
+  let ValidaEmail = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,4})+$/
+
   if (nombre.value.length < 3) {
-    alert('El Nombre no es valido...muy corto')
+    alert('El Nombre no es válido...muy corto')
     entrar = true
   }
-  if (apellido.value.length < 1) {
+  if (apellido.value.length < 2) {
     alert('Debes ingresar un apellido')
     entrar = true
   }
   if (!ValidaEmail.test(email.value)) {
-    alert('El email no es valido')
+    alert('El email no es válido')
     entrar = true
   }
-
 
   if (entrar) {
     // parrafo.innerHTML = warnings
   } else {
-    const $form = document.querySelector('#form')
-
-    $form.addEventListener('submit', handlesubmit)
-
-    async function handlesubmit(event) {
-      event.preventDefault()
-      const form = new FormData(this)
-      const response = await fetch(this.action, {
-        method: this.method,
-        body: form,
-        headers: {
-          'Accept': 'application/json'
-        }
-      })
-      if (response.ok) {
-        this.reset()
-        alert('Gracias por contactarnos, te responderemos a la brevedad')
-      }
-    }
+    handlesubmit();
   }
-})
+});
+
+async function handlesubmit() {
+  const $form = document.querySelector('#form');
+  const form = new FormData($form);
+  const response = await fetch($form.action, {
+    method: $form.method,
+    body: form,
+    headers: {
+      'Accept': 'application/json'
+    }
+  });
+  if (response.ok) {
+    form.reset();
+    alert('Gracias por contactarnos, te responderemos a la brevedad');
+  }
+}
 
