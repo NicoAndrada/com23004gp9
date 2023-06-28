@@ -5,50 +5,55 @@ const email = document.getElementById("Email")
 const form = document.getElementById("form")
 const parrafo = document.getElementById("Warnings")
 
-//si se completa mal el formulario la validacion funciona bien. 
-//si corrijo el dato en el formulario y aprieto enviar no hace nada.... 
-//hay que hacer dos veces click
-//en el boton enviar para que la info se mande
+
+//PROBE DE SACAR LA SEGUNDA LLAMADA AL SUBMIT PERO NO FUNCIONA.....
+
 
 
 form.addEventListener("submit", e => {
   e.preventDefault()
+  //let warnings = ""
   let entrar = false
-  let ValidaEmail = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,4})+$/
-
+  let ValidaEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
+  //parrafo.innerHTML = ""
   if (nombre.value.length < 3) {
-    alert('El Nombre no es válido...muy corto')
+    alert('El nombre no es valido')
     entrar = true
   }
-  if (apellido.value.length < 2) {
-    alert('Debes ingresar un apellido')
+  if (apellido.value.length < 1) {
+    alert('El apellido no es valido')
     entrar = true
   }
   if (!ValidaEmail.test(email.value)) {
-    alert('El email no es válido')
+    alert('El email no es valido')
     entrar = true
   }
+
 
   if (entrar) {
     // parrafo.innerHTML = warnings
   } else {
-    handlesubmit();
-  }
-});
+    const $form = document.querySelector('#form')
 
-async function handlesubmit() {
-  const $form = document.querySelector('#form');
-  const form = new FormData($form);
-  const response = await fetch($form.action, {
-    method: $form.method,
-    body: form,
-    headers: {
-      'Accept': 'application/json'
+    $form.addEventListener('submit', handlesubmit)
+
+
+
+    async function handlesubmit(event) {
+      event.preventDefault()
+      const form = new FormData(this)
+      const response = await fetch(this.action, {
+        method: this.method,
+        body: form,
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+      if (response.ok) {
+        this.reset()
+        alert('Gracias por contactarnos, te responderemos a la brevedad')
+      }
     }
-  });
-  if (response.ok) {
-    form.reset();
-    alert('Gracias por contactarnos, te responderemos a la brevedad');
   }
-}
+})
 
